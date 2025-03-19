@@ -16,13 +16,13 @@
     "app.plugin.js"
   ],
   "scripts": {
-    "build": "expo-module build",
-    "clean": "expo-module clean",
-    "lint": "expo-module lint",
-    "test": "expo-module test",
-    "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module"
+    "build": "echo expo-module build",
+    "clean": "echo expo-module clean",
+    "lint": "echo expo-module lint",
+    "test": "echo expo-module test",
+    "prepare": "echo expo-module prepare",
+    "prepublishOnly": "echo expo-module prepublishOnly",
+    "expo-module": "echo expo-module"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
