@@ -1,5 +1,5 @@
 {
-  "name": "@config-plugins/ffmpeg-kit-react-native",
+  "name": "@spreen/ffmpeg-kit-react-native-config",
   "version": "9.0.0",
   "description": "Config plugin to auto configure FFMPEG on prebuild",
   "main": "build/withFFMPEG.js",
@@ -23,6 +23,10 @@
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "keywords": [
     "ffmpeg-kit-react-native",
