@@ -4,16 +4,16 @@ Config plugin to auto-configure `ffmpeg-kit-react-native` when the native code i
 
 ## Versioning
 
-| `expo` | `ffmpeg-kit-react-native` | `@config-plugins/ffmpeg-kit-react-native` |
-| ------ | ------------------------- | ----------------------------------------- |
-| 52.0.0 | 6.0.2                     | ^9.0.0                                    |
-| 51.0.0 | 6.0.2                     | ^8.0.0                                    |
-| 50.0.0 | 6.0.2                     | ^7.0.0                                    |
-| 49.0.0 | 5.1.0                     | ^6.0.0                                    |
-| 48.0.0 | 5.1.0                     | ^5.0.0                                    |
-| 47.0.0 | 5.1.0                     | ^4.0.0                                    |
-| 46.0.0 | 4.5.2                     | ^3.0.0                                    |
-| 45.0.0 | 4.5.1                     | ^2.0.0                                    |
+| `expo` | `ffmpeg-kit-react-native` | `@spreen/ffmpeg-kit-react-native-config` |
+| ------ | ------------------------- | ---------------------------------------- |
+| 52.0.0 | 6.0.2                     | ^9.0.0                                   |
+| 51.0.0 | 6.0.2                     | ^8.0.0                                   |
+| 50.0.0 | 6.0.2                     | ^7.0.0                                   |
+| 49.0.0 | 5.1.0                     | ^6.0.0                                   |
+| 48.0.0 | 5.1.0                     | ^5.0.0                                   |
+| 47.0.0 | 5.1.0                     | ^4.0.0                                   |
+| 46.0.0 | 4.5.2                     | ^3.0.0                                   |
+| 45.0.0 | 4.5.1                     | ^2.0.0                                   |
 
 ## Expo installation
 
@@ -24,7 +24,7 @@ Config plugin to auto-configure `ffmpeg-kit-react-native` when the native code i
 First install the package with yarn, npm, or [`npx expo install`](https://docs.expo.io/workflow/expo-cli/#expo-install).
 
 ```sh
-npx expo install ffmpeg-kit-react-native @config-plugins/ffmpeg-kit-react-native
+npx expo install ffmpeg-kit-react-native @spreen/ffmpeg-kit-react-native-config
 ```
 
 After installing this npm package, add the [config plugin](https://docs.expo.io/guides/config-plugins/) to the [`plugins`](https://docs.expo.io/versions/latest/config/app/#plugins) array of your `app.json` or `app.config.js`:
@@ -32,7 +32,7 @@ After installing this npm package, add the [config plugin](https://docs.expo.io/
 ```json
 {
   "expo": {
-    "plugins": ["@config-plugins/ffmpeg-kit-react-native"]
+    "plugins": ["@spreen/ffmpeg-kit-react-native-config"]
   }
 }
 ```
@@ -53,7 +53,7 @@ The plugin provides props for extra customization. Every time you change the pro
 {
   "plugins": [
     [
-      "@config-plugins/ffmpeg-kit-react-native",
+      "@spreen/ffmpeg-kit-react-native-config",
       {
         "package": "min",
         "ios": {
