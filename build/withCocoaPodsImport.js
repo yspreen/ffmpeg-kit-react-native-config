@@ -47,7 +47,7 @@ function addCocoaPodsImport(src) {
     tag: `ffmpeg-kit-react-native-import`,
     src,
     newSrc: `
-  pod 'ffmpeg-kit-react-native', :subspecs => podfile_properties['ffmpeg-kit-react-native.subspecs'] || [], :podspec => File.join(File.dirname(\`node --print "require.resolve('@spreen/ffmpeg-kit-react-native/package.json')"\`), "ffmpeg-kit-react-native.podspec")
+  pod 'ffmpeg-kit-react-native', :subspecs => podfile_properties['ffmpeg-kit-react-native.subspecs'] || [], :podspec => File.join(File.dirname(\`node --print "require.resolve('ffmpeg-kit-react-native/package.json')"\`), "ffmpeg-kit-react-native.podspec")
   pod 'spreen-ffmpeg-kit-ios-full-gpl', :git => "https://github.com/yspreen/ffmpeg-kit-pod.git", :tag => 'main'`,
     anchor: /use_native_modules/,
     // We can't go after the use_native_modules block because it might have parameters, causing it to be multi-line (see react-native template).

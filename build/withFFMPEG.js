@@ -4,10 +4,10 @@ const config_plugins_1 = require("expo/config-plugins");
 const withAndroidFFMPEGPackage_1 = require("./withAndroidFFMPEGPackage");
 const withCocoaPodsImport_1 = require("./withCocoaPodsImport");
 let pkg = {
-  name: "@spreen/ffmpeg-kit-react-native",
+  name: "ffmpeg-kit-react-native",
 };
 try {
-  pkg = require("@spreen/ffmpeg-kit-react-native/package.json");
+  pkg = require("ffmpeg-kit-react-native/package.json");
 } catch {
   // empty catch block
 }
